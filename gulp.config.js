@@ -43,7 +43,7 @@ module.exports = function() {
       '**/*.module.js',
       '**/*.js'
     ],
-    sass: client + 'styles/app.scss',
+    sass: client + 'styles/**/*.scss',
     report: report,
     root: root,
     server: server,

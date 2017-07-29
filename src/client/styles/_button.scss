@@ -1,0 +1,18 @@
+.btn-auth {
+    border-radius: 3px;
+    padding: 10px 20px;
+    background: #624dd6;
+    border-color: #624dd6;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    transition: 0.2s;
+    &:hover {
+        background: #624dd6;
+        border-color: #624dd6;
+        color: #FFFFFF;
+        transform: translateY(-2px);
+    }
+}

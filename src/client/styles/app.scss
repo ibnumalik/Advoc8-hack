@@ -2,5 +2,8 @@ app {
   display: block;
 }
 
-@import 'navbar';
 @import 'theme';
+@import 'navbar';
+@import 'auth';
+@import 'button';
+@import 'form';

@@ -10,10 +10,11 @@
       bindings: {}
     });
 
-  topNavController.$inject = [];
-  function topNavController() {
+  topNavController.$inject = ['$uibModal'];
+  function topNavController($uibModal) {
     var $ctrl = this;
 
+    // $ctrl.signUp = signUp();
 
     ////////////////
 
@@ -22,7 +23,7 @@
       // on scroll,
       $(window).on('scroll', function () {
         // we round here to reduce a little workload
-        stop = Math.round($(window).scrollTop());
+        var stop = Math.round($(window).scrollTop());
         if (stop > mainbottom) {
           $('.navbar').addClass('past-main');
           $('.navbar').addClass('effect-main')
@@ -33,5 +34,12 @@
     };
     $ctrl.$onChanges = function (changesObj) { };
     $ctrl.$onDestroy = function () { };
+
+    function signUp() {
+      console.log('hey');
+      var modalInstance = $uibModal.open({
+        component: 'signupModal'
+      });
+    }
   }
 })();

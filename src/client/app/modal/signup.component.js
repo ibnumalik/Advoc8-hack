@@ -2,18 +2,17 @@
   'use strict';
 
   angular
-    .module('app.layout')
-    .component('app', {
-      templateUrl:'app/layout/app.html',
-      controller: AppController,
+    .module('app.modal')
+    .component('signupModal', {
+      templateUrl: 'app/modal/signup.html',
+      controller: signUpController,
       controllerAs: '$ctrl',
       bindings: {}
     });
 
-  AppController.$inject = [];
-  function AppController() {
+  signUpController.$inject = [];
+  function signUpController() {
     var $ctrl = this;
-    $ctrl.title = 'Advoc8 Hack';
 
 
     ////////////////

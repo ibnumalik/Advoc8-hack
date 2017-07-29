@@ -6,7 +6,10 @@
     'app.widgets',
     'app.admin',
     'app.homepage',
-    'app.layout'
+    'app.layout',
+    'app.modal',
+    'app.auth',
+    'app.dashboard'
   ]);
 
 })();

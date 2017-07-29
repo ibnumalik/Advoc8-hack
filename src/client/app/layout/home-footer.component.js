@@ -1,19 +1,25 @@
 (function() {
   'use strict';
 
+  // Usage:
+  //
+  // Creates:
+  //
+
   angular
     .module('app.layout')
-    .component('app', {
-      templateUrl:'app/layout/app.html',
-      controller: AppController,
+    .component('homeFooter', {
+      templateUrl: 'app/layout/home-footer.html',
+      controller: HomeFooterController,
       controllerAs: '$ctrl',
-      bindings: {}
+      bindings: {
+        Binding: '=',
+      },
     });
 
-  AppController.$inject = [];
-  function AppController() {
+  HomeFooterController.$inject = [];
+  function HomeFooterController() {
     var $ctrl = this;
-    $ctrl.title = 'Advoc8 Hack';
 
 
     ////////////////
