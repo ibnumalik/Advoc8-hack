@@ -14,7 +14,7 @@
 
   var config = {
     appErrorPrefix: '[advoc8 Error] ',
-    appTitle: 'advoc8'
+    appTitle: 'Advoc8 Maid'
   };
 
   core.value('config', config);
