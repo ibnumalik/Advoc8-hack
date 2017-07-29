@@ -2,3 +2,16 @@
   font-family: 'Roboto', sans-serif;
   color: #888;
 }
+
+.form {
+  .form-control.ng-invalid.ng-touched {
+    border: 1px #a94442 solid;
+  }
+}
+
+.form-inline {
+  margin-bottom: 1rem;
+  .form-group {
+    width: 45%;
+  }
+}

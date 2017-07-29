@@ -1,1 +1,19 @@
-<h1>I am dashboard</h1>
+<div class="dashboard">
+  <div class="container">
+    <h1 class="dashboard__title">Dashboard</h1>
+    <div class="dashboard-box">
+      <ul class="nav nav-tabs">
+        <li ui-sref-active="active">
+          <a ui-sref=".profile">Account Info</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref=".application">Application</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref=".search">Search</a>
+        </li>
+      </ul>
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

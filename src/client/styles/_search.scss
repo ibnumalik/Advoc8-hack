@@ -1,0 +1,17 @@
+.search {
+    .box-inner {
+        position: relative;
+    }
+    .box-icon {
+        text-align: center;
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

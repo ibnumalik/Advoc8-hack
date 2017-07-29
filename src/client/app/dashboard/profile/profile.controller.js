@@ -3,11 +3,12 @@
 
   angular
     .module('app.dashboard')
-    .controller('DashboardController', DashboardController);
+    .controller('ProfileController', ProfileController);
 
-  DashboardController.$inject = ['ProfileService'];
-  function DashboardController(ProfileService) {
+  ProfileController.$inject = ['ProfileService'];
+  function ProfileController(ProfileService) {
     var vm = this;
+
 
     activate();
 

@@ -14,7 +14,7 @@
   function topNavController($uibModal) {
     var $ctrl = this;
 
-    // $ctrl.signUp = signUp();
+    $ctrl.signUp = signUp;
 
     ////////////////
 

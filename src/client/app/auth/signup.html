@@ -5,17 +5,17 @@
         <h1 class="auth__title">Register for free</h1>
       </div>
       <div class="auth__body">
-        <form novalidate>
+        <form novalidate class="form">
           <div class="form-group">
-            <input class="form-control" type="text" name="name" placeholder="Name" ng-model="vm.details.name">
+            <input class="form-control" type="text" name="name" placeholder="Name" ng-model="vm.details.name" required>
           </div>
           <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="Email" ng-model="vm.details.email">
+            <input class="form-control" type="email" name="email" placeholder="Email" ng-model="vm.details.email" required>
           </div>
           <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Password" ng-model="vm.details.password">
+            <input class="form-control" type="password" name="password" placeholder="Password" ng-model="vm.details.password" required>
           </div>
-          <button class="btn btn-lg btn-auth" type="button" ng-click="vm.signup()">Submit</button>
+          <button class="btn btn-lg btn-auth" type="submit" ng-click="vm.signup(vm.details)">Submit</button>
         </form>
       </div>
       <div class="auth__footer">

@@ -3,6 +3,7 @@
 
   angular.module('app.dashboard', [
     'app.core',
-    'blocks.router'
+    'blocks.router',
+    'ui.bootstrap.tabs'
   ]);
 })();

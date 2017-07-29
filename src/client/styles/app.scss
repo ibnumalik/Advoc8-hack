@@ -1,5 +1,9 @@
 app {
-  display: block;
+    display: block;
+}
+
+.content {
+    padding: 10rem 0 5rem 0;
 }
 
 @import 'theme';
@@ -7,3 +11,5 @@ app {
 @import 'auth';
 @import 'button';
 @import 'form';
+@import 'profile';
+@import 'search';
