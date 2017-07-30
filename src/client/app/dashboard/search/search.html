@@ -10,69 +10,24 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-        <div class="box-inner">
-          <div class="box-icon gareth">
-            <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200,fl_lossy,q_auto,f_auto/v1/30605/Max_Abadian_Miranda_Kerr_Elle_1_vr4qgb.jpg"
-              width="45" alt="Feature">
-          </div>
-          <div class="box-info text-center">
-            <h1>Miranda Kerr</h1>
-            <p>Tell about yourself</p>
-          </div>
-          <div class="box-arrow text-center">
-            <button class="btn btn-primary pull-right">Hire Me</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-3 col-sm-4 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+      <div class="col-md-3 col-sm-4 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"
+          ng-repeat="maid in vm.maids">
         <div class="box-inner">
           <div class="box-icon gareth">
             <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200,fl_lossy,q_auto,f_auto/v1/30605/Max_Abadian_Miranda_Kerr_Elle_1_vr4qgb.jpg"
               width="45" alt="Feature">
           </div>
           <div class="box-info">
-            <h1>Miranda Kerr</h1>
-            <p>Tell about yourself</p>
+            <h1>{{ maid.first_name + ' ' + maid.last_name }}</h1>
+            <p>{{ maid.bio }}</p>
           </div>
           <div class="box-arrow">
-            <button class="btn btn-primary pull-right">Hire Me</button>
+            <button class="btn btn-primary pull-right" ng-click="vm.hire($event)">Interested</button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-4 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-        <div class="box-inner">
-          <div class="box-icon gareth">
-            <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200,fl_lossy,q_auto,f_auto/v1/30605/Max_Abadian_Miranda_Kerr_Elle_1_vr4qgb.jpg"
-              width="45" alt="Feature">
-          </div>
-          <div class="box-info">
-            <h1>Miranda Kerr</h1>
-            <p>Tell about yourself</p>
-          </div>
-          <div class="box-arrow">
-            <button class="btn btn-primary pull-right">Hire Me</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-4 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-        <div class="box-inner">
-          <div class="box-icon gareth">
-            <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_200,w_200,fl_lossy,q_auto,f_auto/v1/30605/Max_Abadian_Miranda_Kerr_Elle_1_vr4qgb.jpg"
-              width="45" alt="Feature">
-          </div>
-          <div class="box-info">
-            <h1>Miranda Kerr</h1>
-            <p>Tell about yourself</p>
-          </div>
-          <div class="box-arrow">
-            <button class="btn btn-primary pull-right">Hire Me</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>

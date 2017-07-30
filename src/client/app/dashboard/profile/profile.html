@@ -5,18 +5,18 @@
       <form novalidate>
         <div class="form-group">
           <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" value="">
+          <input id="name" type="text" class="form-control" value="shaiful">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input id="email" type="text" class="form-control" value="">
+          <input id="email" type="text" class="form-control" value="shaiful@zzm.com">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input id="password" type="password" class="form-control" value="">
+          <input id="password" type="password" class="form-control" ng-model="vm.details.user.password">
         </div>
         <div class="form-group">
-          <button class="btn btn-auth">Save</button>
+          <button class="btn btn-auth" ng-click="vm.updateProfile(vm.details)">Save</button>
         </div>
       </form>
     </div>

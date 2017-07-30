@@ -5,60 +5,68 @@
       <form novalidate>
         <div class="form-group">
           <label for="first-name">Type</label>
-          <select class="form-control">
-            <option value="Housemaid">Housemaid</option>
+          <select class="form-control" ng-model="vm.details.type">
+            <option value="Maid">Maid</option>
             <option value="Employer">Employer</option>
           </select>
         </div>
         <div class="form-group">
           <label for="first-name">First Name</label>
-          <input id="first-name" type="text" class="form-control">
+          <input id="first-name" type="text" class="form-control" ng-model="vm.details.first_name">
         </div>
         <div class="form-group">
           <label for="last-name">Last Name</label>
-          <input id="last-name" type="text" class="form-control">
+          <input id="last-name" type="text" class="form-control" ng-model="vm.details.last_name">
         </div>
         <div class="form-group">
-          <label for="name">Gender</label>
-          <select class="form-control">
+          <label for="gender">Gender</label>
+          <select class="form-control" ng-model="vm.details.gender">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
         </div>
         <div class="form-group">
+          <label for="marital">Marital Status</label>
+          <select class="form-control" ng-model="vm.details.marital_status">
+            <option value="Married">Married</option>
+            <option value="Divorce">Divorce</option>
+            <option value="Single">Single</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="occupation">Occupation</label>
-          <input id="occupation" type="text" class="form-control">
+          <input id="occupation" type="text" class="form-control" ng-model="vm.details.occupation ">
         </div>
         <div class="form-group">
           <label for="purpose">Purpose</label>
-          <input id="purpose" type="text" class="form-control">
+          <input id="purpose" type="text" class="form-control" ng-model="vm.details.purpose">
         </div>
         <div class="form-group">
-          <label for="purpose">Bio</label>
-          <textarea class="form-control" rows="3"></textarea>
+          <label for="bio">Bio</label>
+          <textarea id="bio" class="form-control" rows="3" ng-model="vm.details.bio"/>
         </div>
         <div class="form-group">
           <label for="contact">Contact Number</label>
-          <input id="contact" type="number" class="form-control">
+          <input id="contact" type="number" class="form-control" ng-model="vm.details.contact_number">
         </div>
         <div class="form-group">
           <label for="country">Country</label>
-          <select name="country" id="country" class="form-control">
+          <select name="country" id="country" class="form-control" ng-model="vm.details.country">
             <option value="Malaysia">Malaysia</option>
           </select>
         </div>
         <div class="form-group">
           <label for="adress">Adress</label>
-          <input id="adress" type="text" class="form-control">
+          <input id="adress" type="text" class="form-control" ng-model="vm.details.address">
         </div>
         <div class="form-group">
           <label for="name">State</label>
-          <select name="state" id="state" class="form-control">
+          <select name="state" id="state" class="form-control" ng-model="vm.details.state">
             <option value="Selangor">Selangor</option>
           </select>
         </div>
         <div class="form-group">
-          <button class="btn btn-auth">Submit</button>
+          <button class="btn btn-auth" ng-click="vm.updateApplication(vm.details)">Submit</button>
         </div>
       </form>
     </div>

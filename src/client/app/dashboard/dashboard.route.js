@@ -39,7 +39,7 @@
           url: '/application',
           parent: 'dashboard',
           templateUrl: 'app/dashboard/application/application.html',
-          controller: 'ProfileController',
+          controller: 'ApplicationController',
           controllerAs: 'vm',
           title: 'dashboard-application'
         }

@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -8,12 +8,17 @@
   ProfileService.$inject = ['$http'];
   function ProfileService($http) {
     var service = {
-      getProfile: getProfile
+      getProfiles: getProfiles
     };
 
     return service;
 
     ////////////////
-    function getProfile() { }
+    function getProfiles() {
+      return $http.get('https://0f80a679.ngrok.io/api/load/maid')
+        .then(function (response) {
+          return response.data;
+        })
+    }
   }
 })();
