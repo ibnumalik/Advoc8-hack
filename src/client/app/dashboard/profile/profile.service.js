@@ -20,5 +20,11 @@
           return response.data;
         })
     }
+    function getProfile(userId) {
+      return $http.get('https://0f80a679.ngrok.io/api/user/' + userId)
+        .then(function (response) {
+          return response;
+        })
+    }
   }
 })();
