@@ -120,11 +120,17 @@ gulp.task('templatecache', ['clean-code'], function() {
     .pipe(gulp.dest(config.temp));
 });
 
+gulp.task('babel', function() {
+  return gulp.src(config.js)
+    .pipe($.babel())
+    .pipe(gulp.dest(config.temp));
+});
+
 /**
  * Wire-up the bower dependencies
  * @return {Stream}
  */
-gulp.task('wiredep', function() {
+gulp.task('wiredep', ['babel'], function() {
   log('Wiring the bower dependencies into the html');
 
   var wiredep = require('wiredep').stream;
