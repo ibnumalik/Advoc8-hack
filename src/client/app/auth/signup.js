@@ -3,22 +3,21 @@
 
   angular
     .module('app.auth')
-    .controller('AuthController', AuthController);
+    .component('signup', {
+      controller: SignupController,
+      controllerAs: 'vm',
+      templateUrl: 'app/auth/signup.html',
+      bindings:{}
+    });
 
-  AuthController.$inject = ['AuthService', '$state', '$window'];
-  function AuthController(AuthService, $state, $window) {
-    var vm = this;
+  SignupController.$inject = ['AuthService', '$state'];
 
-    vm.details = {};
-
+  function SignupController(AuthService, $state) {
+    const vm = this;
     vm.signup = signup;
 
-    activate();
-
-    ////////////////
-
-    function activate() { }
-
+    //////////////////
+    vm.$onInit = function() {}
     function signup(details) {
       console.log(details);
       AuthService.signup(details)
