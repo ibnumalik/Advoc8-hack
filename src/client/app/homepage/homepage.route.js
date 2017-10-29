@@ -17,9 +17,7 @@
         state: 'homepage',
         config: {
           url: '/',
-          templateUrl: 'app/homepage/homepage.html',
-          controller: 'HomepageController',
-          controllerAs: 'vm',
+          template: '<homepage></homepage>',
           title: 'homepage'
         }
       }
