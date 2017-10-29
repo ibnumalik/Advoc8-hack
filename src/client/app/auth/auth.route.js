@@ -27,9 +27,7 @@
         state: 'signin',
         config: {
           url: '/signin',
-          templateUrl: 'app/auth/signin.html',
-          controller: 'AuthController',
-          controllerAs: 'vm',
+          template: '<signin></signin>',
           title: 'signin'
         }
       }

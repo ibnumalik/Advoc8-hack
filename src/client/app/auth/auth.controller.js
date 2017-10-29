@@ -12,7 +12,6 @@
     vm.details = {};
 
     vm.signup = signup;
-    vm.signin = signin;
 
     activate();
 
@@ -27,16 +26,6 @@
           console.log(response);
           if (response.status === 'success') {
             $state.go('signin');
-          }
-        })
-    }
-
-    function signin(details) {
-      AuthService.signin(details)
-        .then(function (response) {
-          if (response.status === 'success') {
-            $window.localStorage.setItem('access_token', response.data.access_token);
-            $state.go('dashboard.profile');
           }
         })
     }
